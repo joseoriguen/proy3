@@ -34,7 +34,7 @@
 	  $('.alert').hide();//Oculto alert
 	})
 
-
+   
 
 		
 	$('#dataDelete').on('show.bs.modal', function (event) {

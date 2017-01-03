@@ -35,7 +35,7 @@
         height: '200' ,
         defaultPixelsPerValue: 30
          } );
-
+    
     $("#demo-sparkline-pie").sparkline(datosJsonMont, {
         type: 'pie',
         width: '200',
@@ -69,11 +69,11 @@
     <!--===================================================-->
     <div class="panel panel-info panel-colorful">
         <div class="pad-all">
-            <p class="text-lg text-semibold">Grafico Lineal</p>
+            <p class="text-lg text-semibold">Grafico Lineal1</p>
         </div>
         <div class="pad-all text-center">
             <!--Placeholder-->
-            <span id="ticker2"">Loading..</span>
+            <span id="ticker2"">Loading...</span>
         </div>
     </div>
     <!--===================================================-->
