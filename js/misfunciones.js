@@ -228,3 +228,65 @@
 			}
 		})
 	}
+
+
+$('#tablasSel').change(function(){
+	    var opTabla = $("#tablasSel option:selected").val();
+        //var opTabla2 = $("#tablasSel").val();
+        console.log("Este mensaje"); 
+        console.log("Este opcion" + opTabla); 
+        //$('#capa').html(op);
+
+                      //hace la búsqueda
+                                                                                  
+              $.ajax({
+                    type: "POST",
+                    url: "../controladores/obtenerCampos.php",
+                    data: "b="+ opTabla,
+                    dataType: "html",
+                    beforeSend: function(objeto){
+					$("#loader").html("<img src='../img/loader.gif'>");
+					},
+                    error: function(){
+                          alert("error petición ajax");
+                    },
+                    success: function(data){                                                    
+                          $("#resTablas").empty();
+                          //$("#resultado").append(data);
+                          $("#resTablas").html(data).fadeIn('slow');
+                                                             
+                    }
+              });
+
+        });
+                                                                   
+
+$('#tablasSel2').change(function(){
+	    var opTabla = $("#tablasSel2 option:selected").val();
+        //var opTabla2 = $("#tablasSel").val();
+        console.log("Este mensaje"); 
+        console.log("Este opcion" + opTabla); 
+        //$('#capa').html(op);
+
+                      //hace la búsqueda
+                                                                                  
+              $.ajax({
+                    type: "POST",
+                    url: "../controladores/obtenerDatosDina.php",
+                    data: "b="+ opTabla,
+                    dataType: "html",
+                    beforeSend: function(objeto){
+					$("#loader").html("<img src='../img/loader.gif'>");
+					},
+                    error: function(){
+                          alert("error petición ajax");
+                    },
+                    success: function(data){                                                    
+                          $("#resTablas").empty();
+                          //$("#resultado").append(data);
+                          $("#resTablas").html(data).fadeIn('slow');
+                                                             
+                    }
+              });
+
+        });

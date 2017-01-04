@@ -130,7 +130,27 @@
 						
 						            <li class="list-divider"></li>
 						
-						           
+						                                              <!--Category name-->
+                          
+                        
+                                    <!--Menu list item-->
+                                    <li class="active-sub">
+                                        <a href="#">
+                                            <i class="ti-user"></i>
+                                            <span class="menu-title">Cedentes</span>
+                                            <i class="arrow"></i>
+                                        </a>
+                        
+                                        <!--Submenu-->
+                                        <ul class="collapse in">
+                                            <li><a href="manteCedentesQry.php" >ManteConsultas</a></li>
+                                        
+                                            <li><a href="consultadinamica.php">Consulta Dinamica</a></li>
+                                            
+                                            
+                                        </ul>
+                                    </li>
+                        
                                     
 
                                 </ul>
